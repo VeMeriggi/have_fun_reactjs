@@ -1,0 +1,14 @@
+.action {
+    font-size: 17px;
+    font-family: verdana, arial, helvetica;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background-color: #037971;
+    height: 35px;
+    width: auto;
+    color: #fff;
+    min-width: 100px;
+}

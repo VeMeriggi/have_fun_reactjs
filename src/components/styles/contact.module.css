@@ -1,0 +1,15 @@
+.cardContact{
+    display:flex;
+    justify-content:flex-start;
+    font-family: verdana;
+    font-size: 17px;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.contact input {
+    height: 40px;
+}

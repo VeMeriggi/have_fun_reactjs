@@ -1,38 +1,171 @@
-.App {
+* {
+  margin: 2px;
+}
+/* 
+Colors:
+03B5AA === light sea green
+037971 === pine green
+023436 === rich black
+00BFB3 === tifany blue
+049A8F === persian green
+*/
+body {
+  font-size: 24px;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #023436;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.nav {
+  background-color: #FFF2F1;
+  flex: 1 1 5rem;
+  padding-top: 3rem;    
+  color:#023436;    
+}
+
+.article {
+  background-color: #FFF2F1; 
+  flex: 3 3 ; 
+  padding-top: 3rem;
+  color:#023436;
+}
+.article .thumnails {
+  display: flex;
+  justify-content: space-around;
+}
+.article .list {
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.list .card {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  background-color: #fef9ff;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 10px;
+}
+.list .card .body {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  font-family: verdana;
+}
+.list .card .title h5 {
+  color:#D4C1EC;
+  font-size: 10px;
+  font-family: verdana;
+}
+
+.aside {
+  background-color: #FFF2F1; 
+  flex: 1 1 5rem;
+  padding-top: 3rem;    
+  color:#023436;      
+}
+
+.footer {
+  background-color: #97A7B3;
+  height: 200px;
+  display: flex;
+  color: #023436;
+  justify-content: space-around;
+}
+.image {
+  justify-content: space-around;
+}
+.brand {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.footer .about {
+  padding-top:15px;
+  padding-left: 10px;
+  flex-basis: 400px;
+  text-align: left;
+}
+.footer .tags {
+  padding-top:15px;
+  padding-left: 10px;
+  flex-basis: 400px;
+  text-align: left;
+  display: flex;
+}
+.tags ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: blue;
+}
+.tags ul li {
+  cursor: pointer;
+  flex: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  font-size: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: space-around; */
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+  flex: auto;
+  text-align: center;
+}
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login {
+  color:#023436;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 400px) {
+  nav ul {
+      flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  nav ul li {
+      text-align: center;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .main {
+      flex-direction: column;
   }
 }
